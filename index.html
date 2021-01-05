@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>map</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<section class="map">
+		<div id="map">
+
+		</div>
+		<input type="text" class="start" placeholder="from" autocomplete="on">
+		<input type="text" class="end" placeholder="to" autocomplete="on">
+		<button type="button" class="btn">LETS GO</button>
+		<select id="mode">
+			<option value="DRIVING">Driving</option>
+			<option value="WALKING">Walking</option>
+			<option value="BICYCLING">Bicycling</option>
+			<option value="TRANSIT">Transit</option>
+		</select>
+		<!-- <div id="warnings-panel"></div> -->
+
+
+
+	</section>
+	<!-- Scripts -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdiF5LTXJx44zk6fJ2ocxSL_6PH0ArKT8&callback=initMap"
+		defer></script>
+	<script src="js/libs/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
